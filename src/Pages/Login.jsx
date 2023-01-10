@@ -6,8 +6,8 @@ import AdminNav from "../Components/AdminNav";
 import { logindata } from "../Redux/Authreducer/Action";
 // https://reqres.in/api/login
 export default function Login() {
-    const [email,setEmail] = useState('eve.holt@reqres.in')
-    const [password,setPassword] = useState('cityslicka')
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
     const navigate = useNavigate()
     const dispatch = useDispatch()
     const data = useSelector((e) => e.Auth_Reducer)
